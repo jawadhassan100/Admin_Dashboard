@@ -1,0 +1,4 @@
+/*! Bootstrap 5 styling wrapper for ColReorder
+ * ©2018 SpryMedia Ltd - datatables.net/license
+ */
+import $ from"jquery";import DataTable from"datatables.net-bs5";import ColReorder from"datatables.net-colreorder";!function(a){"function"==typeof define&&define.amd?define(["jquery","datatables.net-bs5","datatables.net-colreorder"],function(e){return a(e,window,document)}):"object"==typeof exports?module.exports=function(e,t){return e=e||window,(t=t&&t.fn.dataTable?t:require("datatables.net-bs5")(e,t).$).fn.dataTable.ColReorder||require("datatables.net-colreorder")(e,t),a(t,0,e.document)}:a(jQuery,window,document)}(function(e,t,a,r){return e.fn.dataTable});export default DataTable;

@@ -1,0 +1,1 @@
+sessionStorage.getItem("data-layout-mode")&&"light"==sessionStorage.getItem("data-layout-mode")?document.documentElement.setAttribute("data-bs-theme","light"):"dark"==sessionStorage.getItem("data-layout-mode")&&document.documentElement.setAttribute("data-bs-theme","dark");
