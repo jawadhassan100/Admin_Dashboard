@@ -319,7 +319,7 @@
               <div class="card " >
                 <div class="card-header d-flex justify-content-between">
                     <h2 class="card-title text-muted text-truncate" style="font-weight: bolder; font-size: 25px;">Employe Table</h2>
-                    <a href="../employe/createEmploye.html" class="btn bg-primary text-white d-flex align-items-center" style="height: 60px; width: 140px; font-weight:bold; font-size: 18px;">Add Employe</a>
+                    <a href="../employe/createEmploye.html" class="btn bg-primary text-white d-flex align-items-center" style="font-weight:bold; font-size: 15px;">Add Employe</a>
                 </div>
             <div class="row dt-row"><div class="col-sm-12"><table id="datatable" class="table table-hover table-auto table-bordered table-striped dt-responsive nowrap dataTable no-footer dtr-inline" style="border-collapse: collapse; border-spacing: 0px; width: 100%;" aria-describedby="datatable_info">
                 <thead >
@@ -329,7 +329,11 @@
                         <th class="sorting sorting_desc" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 139.4px;" aria-label="Office: activate to sort column ascending" aria-sort="descending">Name</th>
                         <th class="sorting sorting_desc" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width:  193.4px;" aria-label="Office: activate to sort column ascending" aria-sort="descending">Email</th>
                         <th class="sorting sorting_desc" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 139.4px;" aria-label="Office: activate to sort column ascending" aria-sort="descending">Deparment</th>
-                        <th class="sorting sorting_desc" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 139.4px;" aria-label="Office: activate to sort column ascending" aria-sort="descending">Designation</th></thead>
+                        <th class="sorting sorting_desc" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 139.4px;" aria-label="Office: activate to sort column ascending" aria-sort="descending">Designation</th>
+                        <th class="sorting sorting_desc" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 139.4px;" aria-label="Office: activate to sort column ascending" aria-sort="descending">Status</th>
+                        <th class="sorting sorting_desc" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 139.4px;" aria-label="Office: activate to sort column ascending" aria-sort="descending">Action</th></thead>
+                
+                      
                 <tbody class="" style="font-weight: lighter; margin: 50px 50px;" >       
                 <tr class="">
                         <td class="dtr-control text-center " tabindex="0"  style="font-weight: bolder;" >1</td>
@@ -338,10 +342,18 @@
                         <td class="sorting_1">johndoe@example.com</td>
                         <td class="sorting_1">Human Resources</td>
                         <td class="sorting_1">Manage</td>
+                        <td class="sorting_1">Active <i class="fas fa-circle" style="font-size: 10px; color: green;"></i></td>
+                        <td>
+                            <div class="d-flex  gap-2">
+                             <a href="../employe/editEmploye.html" class="btn bg-primary text-white d-flex align-items-center" style="height: 25px; width: fit-content; font-weight:bold; font-size: 10px;">Edit</a>
+                            <a href="#" class="btn bg-danger text-white d-flex align-items-center" style="height: 25px; width: fit-content; font-weight:bold; font-size: 10px;">Delete</a>
+                        </div>
+                    </td>
                     </tr>
                     </tbody>
             </table></div></div>
         </div>
+       
                 </div>
             <!-- end container-fluid -->
         </div>
