@@ -37206,7 +37206,7 @@ readers do not read off random characters that represent icons */
 }
 
 .tasks-wrapper {
-  max-height: calc(100vh - 418px);
+  max-height: calc(100vh - 18px);
 }
 
 .tasks {
