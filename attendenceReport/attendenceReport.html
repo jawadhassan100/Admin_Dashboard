@@ -33,21 +33,103 @@
     
     <!-- Start topbar -->
     <header id="page-topbar">
-        <div class="navbar-header">
-            <div class="navbar-logo-box">
-               <h3>TeamsCare</h3>
+        <div class="navbar-header " >
 
-             
+            <!-- Logo -->
+
+            <!-- Start Navbar-Brand -->
+            <div class="navbar-logo-box">
+                <a href="/index.html" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="../assets/images/logo-sm.png" alt="logo-sm-dark" height="20">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="../assets/images/logo-dark.png" alt="logo-dark" height="18">
+                    </span>
+                </a>
+
+                <a href="/index.html" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="../assets/images/logo-sm.png" alt="logo-sm-light" height="20">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="../assets/images/logo-light.png" alt="logo-light" height="18">
+                    </span>
+                </a>
+
             </div>
             <!-- End navbar brand -->
 
             <!-- Start menu -->
-            <div class="d-flex justify-content-end menu-sm px-3 ms-auto">
-             
-                <div class="d-flex align-items-center gap-3 nm,">
-                    <span class="rich-list-subtitle ">admin@codubucks.in</span>
-                       
+            <div class="d-flex justify-content-between menu-sm px-3 ms-auto">
+                <div class="d-flex align-items-center gap-2">
+                    
 
+                    <div class="dropdown d-none d-lg-block">
+                        
+                        <div class="dropdown-menu dropdown-menu-start dropdown-menu-lg-widest dropdown-menu-widest dropdown-menu-animated bg-primary-subtle overflow-hidden">
+                            <div class="dropdown-row justify-content-center">
+                                <div class="p-2 menu-image">
+                                    <img src="../assets/images/mega-menu.png" alt="mega-menu image" class="img-fluid" style="height: 200px;">
+                                </div>
+                                <div class="dropdown-col">
+                                    <h2 class="">Welcome back!</h2>
+                                    <p class="text-muted mb-0">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, commodi hic qui aspernatur doloremque quos tempora placeat culpa illum, voluptatibus delectus provident cumque
+                                        aliquid enim, laborum aliquam. Quod, perferendis unde.
+                                    </p>
+                                    <div class="mt-3">
+                                        <a href="auth-login.html" class="btn btn-dark btn-wider">Login</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-col border-start border-primary border-opacity-50">
+                                    <h4 class="dropdown-header">Features</h4>
+                                    <div class="grid-nav grid-nav-action">
+                                        <div class="grid-nav-row">
+                                            <a href="index.html" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-window-restore"></i></div>
+                                                <span class="grid-nav-content">Dashboard</span>
+                                            </a>
+                                            <a href="apps-kanban.html" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-clipboard"></i></div>
+                                                <span class="grid-nav-content">TODO List</span>
+                                            </a>
+                                            <a href="#" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-question-circle"></i></div>
+                                                <span class="grid-nav-content">Help Center</span>
+                                            </a>
+                                        </div>
+                                        <div class="grid-nav-row">
+                                            <a href="#" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-images"></i></div>
+                                                <span class="grid-nav-content">Gallery</span>
+                                            </a>
+                                            <a href="#" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-chart-bar"></i></div>
+                                                <span class="grid-nav-content">Scrumboard</span>
+                                            </a>
+                                            <a href="#" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-bookmark"></i></div>
+                                                <span class="grid-nav-content">Docs</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-col border-start border-primary border-opacity-50">
+                                    <h4 class="dropdown-header">Tools</h4>
+                                    <a href="#" class="dropdown-item"><i class="mdi mdi-checkbox-blank-circle align-middle dropdown-bullet me-2"></i> <span class="dropdown-content">Components</span> </a>
+                                    <a href="#" class="dropdown-item"><i class="mdi mdi-checkbox-blank-circle align-middle dropdown-bullet me-2"></i> <span class="dropdown-content">Form Wizard</span> </a>
+                                    <a href="#" class="dropdown-item"><i class="mdi mdi-checkbox-blank-circle align-middle dropdown-bullet me-2"></i> <span class="dropdown-content">Documentation</span> </a>
+                                    <a href="#" class="dropdown-item"><i class="mdi mdi-checkbox-blank-circle align-middle dropdown-bullet me-2"></i> <span class="dropdown-content">Knowledge Base</span> </a>
+                                    <a href="#" class="dropdown-item"><i class="mdi mdi-checkbox-blank-circle align-middle dropdown-bullet me-2"></i> <span class="dropdown-content">Inventory Manager</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-2">
+                    
                     <div class="dropdown d-inline-block">
                         <button type="button" class="btn btn-sm top-icon p-0" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img class="rounded avatar-2xs p-0" src="../assets/images/users/avatar-6.png" alt="Header Avatar">
@@ -63,6 +145,7 @@
                                         </div>
                                         <div class="rich-list-content">
                                             <h3 class="rich-list-title text-white">Charlie Stone</h3>
+                                            <span class="rich-list-subtitle text-white">admin@codubucks.in</span>
                                         </div>
                                         <div class="rich-list-append"><span class="badge badge-label-light fs-6">6+</span></div>
                                     </div>
@@ -236,196 +319,160 @@
 
     <!-- Start right Content here -->
 
-    <div class="main-content ">
-             <!--& project detail  -->
-            <div class="page-content " >
+    <div class="main-content">
+        <div class="page-content">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="page-title-box d-flex align-items-center justify-content-between">
-                            <div>
-                                <h4 class="fs-16 fw-semibold mb-1 mb-md-1">Project Details</h4>
-                                <ol class="breadcrumb m-0">
-                                    <li class="breadcrumb-item"><a href="../projects/projects.html">projects</a></li>
-                                    <li class="breadcrumb-item active">project-details</li>
-                                </ol>
-                            </div>
-                            <div class="page-title-right">
-                                <a  href="/projects/taskBoard.html" class="btn btn-primary d-flex gap-2 align-items-center " style="font-weight:500 ;" >Task Board</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex gap-3">
-                <div style="width: 70%;">
-                     <!-- & card 1 -->
-                    <div class="  d-flex justify-content-between mb-4 gap-4 ">
-                        <div class="card shadow-lg py-3 w-50 d-flex justify-content-between align-items-center  flex-row"  >
-                            <div style="padding-left: 15px; margin-left: 15px; font-size: 25px; background-color: rgb(219, 15, 49); display: flex ; justify-content: center; padding-right: 13px; padding-top: 15px; padding-bottom: 15px; border-radius: 50%; color: white;">
-                                <i class="fas fa-check-double"></i>
-                            </div>
-                            
-                            <div class="" style="padding-right:20px ;">
-                                <h2 class="text-muted text-truncate mb-2 card-title ">Total Tasks</h2>
-                                <h3 class="mb-0 text-end">15</h3>
-                            </div>
-                        </div>
-                        <div class="card shadow-lg py-3 w-50 d-flex justify-content-between align-items-center  flex-row"  >
-                            <div class="bg-primary" style="padding-left: 15px; margin-left: 15px; font-size: 25px;  display: flex ; justify-content: center; padding: 15px; border-radius: 50%; color: white;">
-                                <i class=" fas fa-envelope  "></i>
-                            </div>
-                            
-                            <div class="" style="padding-right:20px ;">
-                                <h2 class="text-muted text-truncate mb-2 card-title ">Comments</h2>
-                                <h3 class="mb-0 text-end">9</h3>
-                            </div>
-                        </div>  
-      
-                </div>
-                <!-- & card 2 -->
-                <div class="  d-flex justify-content-between mb-4 gap-4 ">
-                    <div class="card shadow-lg p-3 w-50   "  >
-                        <div class="card-header d-flex justify-content-between w-100">
-                            <h2 class="card-title text-muted text-truncate">Team Memebers <span>(1)</span></h2>
-                            <div class="bg-primary" style="padding-left: 15px;  font-size: 15px;  display: flex ; justify-content: center; padding: 8px; border-radius: 50%; color: white;">
-                                <i class="fas fa-share-alt"></i>
-                            </div>
-                        </div>
-                       <div>
-                        <div class="d-flex justify-content-between align-items-center  mt-4 ">
-                            <div class="d-flex gap-3 align-items-center">
-                                <div class="bg-primary" style="color: white; height: fit-content; padding: 10px 17px; border-radius: 50%; font-size: larger;">A</div>
-                                <div>
-                                <div style="font-size: larger; font-weight: bold;">Allen Mark</div>
-                                <div class="text-muted text-truncate" style="font-size: smaller; letter-spacing: .5px;">allen@gmail.com</div>
-                                </div>
-                            </div>
-                            <i class=" fas fa-trash-alt" style="background-color: rgb(230, 38, 70); padding: 10px; border-radius: 5px; color: #ffffff; font-size: smaller;"></i>
-                        </div>
-                       </div>
-
-                    </div>
-                    <div class="card shadow-lg p-3 w-50   "  >
-                        <div class="card-header d-flex justify-content-between w-100">
-                            <h2 class="card-title text-muted text-truncate">Clients <span>(1)</span></h2>
-                            <div class="bg-primary" style="padding-left: 15px;  font-size: 15px;  display: flex ; justify-content: center; padding: 8px; border-radius: 50%; color: white;">
-                                <i class="fas fa-share-alt"></i>
-                            </div>
-                        </div>
-                       <div>
-                        <div class="d-flex justify-content-between align-items-center  mt-4 ">
-                            <div class="d-flex gap-3 align-items-center">
-                                <div class="bg-info" style="color: white; height: fit-content; padding: 10px 17px; border-radius: 50%; font-size: larger;">C</div>
-                                <div>
-                                <div style="font-size: larger; font-weight: bold;">Client</div>
-                                <div class="text-muted text-truncate" style="font-size: smaller; letter-spacing: .5px;">client@gmail.com</div>
-                                </div>
-                            </div>
-                            <i class=" fas fa-trash-alt" style="background-color: rgb(230, 38, 70); padding: 10px; border-radius: 5px; color: #ffffff; font-size: smaller;"></i>
-                        </div>
-                       </div>
-
-                    </div>
-                   
-  
-            </div>
-                </div>
-
-            <!-- & Activity -->
-                <div style="width: 30%;">
-                    <div class="">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title mb-0">Progress <span style="font-size: small;">(Last Week)</span></h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h2 class="rich-list-title mb-0">Sales growth</h2>
-                                        <p class="rich-list-subtitle mb-0">62%</p>
+                    <div class="col-xxl-9">
+                        <!--& Attendece Report-->
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-icon">
+                                            <i class="fas fa-hockey-puck fs-14 text-muted"></i>
+                                        </div>
+                                        <h4 class="card-title mb-0">Attendence</h4>
                                     </div>
-                                    <div class="progress progress-sm" style="height:8px;">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 62%"></div>
-                                    </div>
-                                </div>
-                                <div class="mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h2 class="rich-list-title mb-0">Product growth</h2>
-                                        <p class="rich-list-subtitle mb-0">34%</p>
-                                    </div>
-                                    <div class="progress progress-sm" style="height:8px;">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 34%"></div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex justify-content-between">
-                                        <h2 class="rich-list-title mb-0">Market share</h2>
-                                        <p class="rich-list-subtitle mb-0">40%</p>
-                                    </div>
-                                    <div class="progress progress-sm" style="height:8px;">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 40%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="card" style="overflow-y: auto; height: 304px;" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: -17px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: 100%; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 0px;">
-                        <div class="card-header card-header-bordered">
-                            <div class="card-icon text-muted"><i class="fa fa-clipboard-list fs-14"></i></div>
-                            <h3 class="card-title">Recent activities</h3>
-                            <div class="card-addon">
-                                <button class="btn btn-sm btn-label-primary">See all</button>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="timeline timeline-timed">
-                                <div class="timeline-item">
-                                    <span class="timeline-time">10:00</span>
-                                    <div class="timeline-pin"><i class="marker marker-circle text-primary"></i></div>
-                                    <div class="timeline-content">
-                                        <div>
-                                            <span>Meeting with</span>
-                                            <div class="avatar-group ms-2">
-                                                <div class="avatar avatar-circle">
-                                                    <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="row mb-2">
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <p><i class="mdi mdi-brightness-5 text-primary me-2"></i>Akbar <span class="text-muted fs-14">-50%</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <p><i class="mdi mdi-briefcase-variant-outline text-danger me-2"></i>Umer <span class="text-muted fs-14">-50%</span></p>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="avatar avatar-circle">
-                                                    <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs">
+                                                <div class="row mb-2">
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <p><i class="mdi mdi-cart-arrow-right text-info me-2"></i>Khan <span class="text-muted fs-14">-50%</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <p><i class="mdi mdi-checkbox-multiple-blank text-warning me-2"></i>Sami <span class="text-muted fs-14">-50%</span></p>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="avatar avatar-circle">
-                                                    <img src="../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs">
+                                                <div class="row mb-2">
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <p><i class="mdi mdi-chess-queen text-success me-2"></i>Saad <span class="text-muted fs-14">-50%</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <p><i class="mdi mdi-church text-info me-2"></i>Asad <span class="text-muted fs-14">-50%</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <p><i class="mdi mdi-city text-warning me-2"></i>Abaas <span class="text-muted fs-14">-50%</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <p><i class="mdi mdi-currency-usd-circle text-primary me-2"></i>Jawad <span class="text-muted fs-14">-50%</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <p><i class="mdi mdi-gamepad-circle text-danger me-2"></i>Waleed <span class="text-muted fs-14">-50%</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <p><i class="mdi mdi-hexagon-multiple text-info me-2"></i>Sheery <span class="text-muted fs-14">-50%</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <div id="gradient_chart" data-colors='["--bs-primary", "--bs-success", "--bs-warning", "--bs-danger", "--bs-info", "--bs-dark", "--bs-purple", "--bs-orange"]' class="apex-charts" dir="ltr"></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="timeline-item">
-                                    <span class="timeline-time">14:00</span>
-                                    <div class="timeline-pin"><i class="marker marker-circle text-danger"></i></div>
-                                    <div class="timeline-content">
-                                        <p class="mb-0">Received a new feedback on <a href="#">GoFinance</a> App product.</p>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="card" style="overflow-y: auto; height: 304px;" data-simplebar="init">
+                                    <div class="card-header card-header-bordered">
+                                        <div class="card-icon text-muted"><i class="fa fa-clipboard-list fs-14"></i></div>
+                                        <h3 class="card-title">Recent activities</h3>
+                                        <div class="card-addon">
+                                            <button class="btn btn-sm btn-label-primary">See all</button>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <span class="timeline-time">15:20</span>
-                                    <div class="timeline-pin"><i class="marker marker-circle text-success"></i></div>
-                                    <div class="timeline-content">
-                                        <p class="mb-0">Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <span class="timeline-time">17:00</span>
-                                    <div class="timeline-pin"><i class="marker marker-circle text-info"></i></div>
-                                    <div class="timeline-content">
-                                        <p class="mb-0">Make Deposit <a href="#">USD 700</a> o ESL.</p>
+                                    <div class="card-body">
+                                        <div class="timeline timeline-timed">
+                                            <div class="timeline-item">
+                                                <span class="timeline-time">10:00</span>
+                                                <div class="timeline-pin"><i class="marker marker-circle text-primary"></i></div>
+                                                <div class="timeline-content">
+                                                    <div>
+                                                        <span>Meeting with</span>
+                                                        <div class="avatar-group ms-2">
+                                                            <div class="avatar avatar-circle">
+                                                                <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs" />
+                                                            </div>
+                                                            <div class="avatar avatar-circle">
+                                                                <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs" />
+                                                            </div>
+                                                            <div class="avatar avatar-circle">
+                                                                <img src="../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <span class="timeline-time">14:00</span>
+                                                <div class="timeline-pin"><i class="marker marker-circle text-danger"></i></div>
+                                                <div class="timeline-content">
+                                                    <p class="mb-0">Received a new feedback on <a href="#">GoFinance</a> App product.</p>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <span class="timeline-time">15:20</span>
+                                                <div class="timeline-pin"><i class="marker marker-circle text-success"></i></div>
+                                                <div class="timeline-content">
+                                                    <p class="mb-0">Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna.</p>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <span class="timeline-time">17:00</span>
+                                                <div class="timeline-pin"><i class="marker marker-circle text-info"></i></div>
+                                                <div class="timeline-content">
+                                                    <p class="mb-0">Make Deposit <a href="#">USD 700</a> o ESL.</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 351px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="transform: translate3d(0px, 0px, 0px); display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 263px; transform: translate3d(0px, 0px, 0px); display: block;"></div></div></div>
+
+                     
+                    </div>
+
+                
                 </div>
             </div>
-            </div>
+            <!-- end container-fluid -->
+        </div>
     </div>
         <!-- End Page-content -->
 
@@ -445,7 +492,6 @@
         </footer>
 
     </div>
-    
     <!-- end main content-->
 </div>
 <!-- end layout-wrapper -->
@@ -659,4 +705,4 @@
 <script src="../assets/js/app.js"></script>
 </body>
 
-</html>     
+</html>
